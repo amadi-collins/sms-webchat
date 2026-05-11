@@ -174,7 +174,8 @@
 </div>
 
 <script>
-  var BACKEND       = "http://localhost:3000";
+  //var BACKEND       = "http://localhost:3000";
+  var BACKEND = "https://webchat.litnmore.com"
   var POLL_INTERVAL = 3000;
 
   // ── State ─────────────────────────────────────────────────────────────────
@@ -199,7 +200,7 @@
     setCookie("chat_name",    "", -1);
   }
 
-  // ── On page load: restore session if cookie exists ────────────────────────
+
   window.addEventListener("load", function() {
     var sid  = getCookie("chat_session");
     var name = getCookie("chat_name");

@@ -1,3 +1,5 @@
 .env
 /node_modules
 /dist
+AuditMonitor.ps1
+signature.html
